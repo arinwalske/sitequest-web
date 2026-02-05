@@ -52,7 +52,7 @@ export default async function SharePage({ searchParams }: Props) {
       <div className="min-h-screen bg-[#121212] text-white flex items-center justify-center p-4">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-2">Invalid Link</h1>
-          <p className="text-[#AAAAAA]">This share link is missing required information.</p>
+          <p className="text-[#AAAAAA]">This share link is missing some required information.</p>
         </div>
       </div>
     );
