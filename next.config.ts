@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: '/supabase/:path*',
+        source: '/auth/:path*',
         destination: 'https://bmbgppgkquphghhzorqh.supabase.co/:path*',
       },
     ];
