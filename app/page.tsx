@@ -158,7 +158,7 @@ export default function HomePage() {
           </div>
           <div className="flex gap-8">
             <a href="/privacy" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Terms of Service</a>
+            <a href="/terms" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Terms of Service</a>
             <a href="#" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Contact</a>
           </div>
         </div>
