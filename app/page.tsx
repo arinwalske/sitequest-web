@@ -157,7 +157,7 @@ export default function HomePage() {
             <p className="text-sm text-[#666] mt-2">© {new Date().getFullYear()} SiteQuest. All rights reserved.</p>
           </div>
           <div className="flex gap-8">
-            <a href="#" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Privacy Policy</a>
+            <a href="/privacy" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Privacy Policy</a>
             <a href="#" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Terms of Service</a>
             <a href="#" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Contact</a>
           </div>
