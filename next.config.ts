@@ -6,7 +6,19 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/auth/:path*',
-        destination: 'https://bmbgppgkquphghhzorqh.supabase.co/:path*',
+        destination: 'https://bmbgppgkquphghhzorqh.supabase.co/auth/:path*',
+      },
+      {
+        source: '/rest/:path*',
+        destination: 'https://bmbgppgkquphghhzorqh.supabase.co/rest/:path*',
+      },
+      {
+        source: '/storage/:path*',
+        destination: 'https://bmbgppgkquphghhzorqh.supabase.co/storage/:path*',
+      },
+      {
+        source: '/realtime/:path*',
+        destination: 'https://bmbgppgkquphghhzorqh.supabase.co/realtime/:path*',
       },
     ];
   },
