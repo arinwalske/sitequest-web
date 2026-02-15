@@ -1,39 +1,44 @@
 import { NextRequest, NextResponse } from "next/server";
 
-// The Supabase project URL
+// The real Supabase project URL
 const SUPABASE_URL = "https://bmbgppgkquphghhzorqh.supabase.co";
 
 async function handler(
   request: NextRequest,
   { params }: { params: Promise<{ path: string[] }> }
 ) {
-  const { path } = await params;
+  const { path } = await params; // Mandatory await for Next.js 15
   const queryString = request.nextUrl.search;
   const targetUrl = `${SUPABASE_URL}/auth/v1/${path.join("/")}${queryString}`;
 
   const headers = new Headers(request.headers);
 
-  // Preserve the original Host header as X-Forwarded-Host
-  // This ensures Supabase sees 'sitequest.me' as the initiator for redirect generation
-  headers.set("X-Forwarded-Host", headers.get("Host") || "");
+  // --- BRANDING HEADER OVERRIDES ---
+  // These trick Google into displaying 'sitequest.me' on the OAuth screen
+  headers.set("Origin", "https://sitequest.me");
+  headers.set("Referer", "https://sitequest.me/");
 
-  // Delete the Host header so the fetch client sets the correct one for the Supabase domain
-  // This is required for SNI and routing at the Supabase load balancer
+  // These tell Supabase to generate redirects based on our proxy domain
+  headers.set("X-Forwarded-Host", "sitequest.me");
+  headers.set("X-Forwarded-Proto", "https");
+  // ---------------------------------
+
+  // Delete the Host header so fetch uses the SUPABASE_URL domain for the TLS handshake
   headers.delete("Host");
 
   try {
     const response = await fetch(targetUrl, {
       method: request.method,
       headers,
-      body: request.body,
-      redirect: "manual", // Return redirects (303/302) directly to the client
-      // @ts-ignore - duplex is required for streaming bodies in Next.js
+      body: request.method !== "GET" && request.method !== "HEAD" ? request.body : null,
+      redirect: "manual", // Directly return the 302/303 redirect to the mobile app
+      // @ts-ignore - duplex is required for streaming bodies in Next.js App Router
       duplex: "half",
     });
 
     const responseHeaders = new Headers(response.headers);
 
-    // Remove headers that shouldn't be forwarded or might cause encoding issues
+    // Clean up headers that might conflict with the proxy response
     responseHeaders.delete("content-encoding");
     responseHeaders.delete("content-length");
 
