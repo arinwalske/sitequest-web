@@ -8,8 +8,8 @@ export default function HomePage() {
       <header className="relative overflow-hidden bg-gradient-to-b from-[#121212] via-[#151515] to-[#121212]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#4CAF50]/5 via-transparent to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 text-center lg:pt-32 lg:pb-32">
-          <div className="mx-auto mb-8 inline-flex items-center justify-center rounded-full bg-[#1E1E1E] border border-[#333] px-4 py-1.5 shadow-lg shadow-[#4CAF50]/10">
-            <span className="text-sm font-medium text-[#4CAF50]">Beta Now Available</span>
+          <div className="mx-auto mb-8 inline-flex items-center justify-center rounded-full bg-[#1E1E1E] border border-[#333] px-4 py-1.5 shadow-lg shadow-[#4CAF50]/10 animate-pulse">
+            <span className="text-sm font-medium text-[#4CAF50]">Coming to the Google Play Store soon</span>
           </div>
           <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-white sm:text-7xl leading-tight">
             The Booking Gamble <br />
