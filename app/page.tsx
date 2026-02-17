@@ -159,6 +159,7 @@ export default function HomePage() {
           <div className="flex gap-8">
             <a href="/privacy" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Privacy Policy</a>
             <a href="/terms" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Terms of Service</a>
+            <a href="https://facebook.com/sitequest.me" target="_blank" rel="noopener noreferrer" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Facebook</a>
             <a href="#" className="text-sm text-[#888] hover:text-[#4CAF50] transition-colors">Contact</a>
           </div>
         </div>
