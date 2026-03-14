@@ -9,17 +9,16 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#4CAF50]/5 via-transparent to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 text-center lg:pt-32 lg:pb-32">
           <div className="mx-auto mb-8 inline-flex items-center justify-center rounded-full bg-[#1E1E1E] border border-[#333] px-4 py-1.5 shadow-lg shadow-[#4CAF50]/10 animate-pulse">
-            <span className="text-sm font-medium text-[#4CAF50]">Coming to the Google Play Store soon</span>
+            <span className="text-sm font-medium text-[#4CAF50]">Approved by Google for production!</span>
           </div>
           <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-white sm:text-7xl leading-tight">
-            The Booking Gamble <br />
+            Scout. Log. Camp. <br />
             <span className="relative whitespace-nowrap text-[#4CAF50]">
-              <span className="relative">Is Over.</span>
+              <span className="relative">With Confidence.</span>
             </span>
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-lg tracking-tight text-[#AAAAAA] leading-relaxed">
-            Stop guessing if a site is level or has trees for your hammock.
-            SiteQuest is the app that lets you scout campsites with your phone, so you can book the perfect spot with confidence. No more surprises when you arrive at the campground.
+            SiteQuest lets you scout and log real campsite details—site number, levelness, hammock trees, Starlink/cell signal, and more—right from your phone. Save your findings, sync to the cloud, and never guess what you'll get when you book. Works offline, supports wild/stealth sites, and helps you find the perfect spot every time.
           </p>
 
           <div className="mt-12 flex justify-center gap-x-6 flex-wrap gap-y-4">
@@ -42,7 +41,7 @@ export default function HomePage() {
             >
               <span className="text-2xl">🤖</span>
               <div className="text-left">
-                <div className="text-xs text-[#AAAAAA]">In closed testing on</div>
+                <div className="text-xs text-[#AAAAAA]">Closed Beta on</div>
                 <div className="text-sm font-bold">Google Play</div>
               </div>
             </a>
@@ -60,7 +59,7 @@ export default function HomePage() {
               Everything you need to know,<br/>before you book.
             </p>
             <p className="mt-6 text-lg leading-8 text-[#AAAAAA]">
-              Public maps tell you where the campground is. SiteQuest tells you which specific site number to book.
+              Public maps show you the campground. SiteQuest shows you which site to book, and what to expect when you get there.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -74,7 +73,7 @@ export default function HomePage() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-[#AAAAAA]">
                   <p className="flex-auto">
-                    No more sleeping on a slope. Our scouts use device gyroscopes to log the actual pitch and roll of the parking pad. Know if you need blocks before you arrive.
+                    No more sleeping on a slope. Use your phone’s sensors to log the actual pitch and roll of the site. Know if you need blocks before you arrive.
                   </p>
                 </dd>
               </div>
@@ -87,7 +86,7 @@ export default function HomePage() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-[#AAAAAA]">
                   <p className="flex-auto">
-                    Working from the road? We track Starlink visibility and verify cell signal strength (dBm) for major carriers right at the site post.
+                    Working from the road? Log Starlink visibility and check cell signal strength for major carriers at each site.
                   </p>
                 </dd>
               </div>
@@ -100,7 +99,7 @@ export default function HomePage() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-[#AAAAAA]">
                   <p className="flex-auto">
-                    Find the perfect hang. We log tree spacing for hammocks and solar orientation so you know if you'll be waking up in an oven or a shaded paradise.
+                    Find the perfect hang. Log tree spacing for hammocks and sun/shade orientation so you know if you’ll wake up in an oven or a shaded paradise.
                   </p>
                 </dd>
               </div>
@@ -118,7 +117,7 @@ export default function HomePage() {
             <p className="text-base font-semibold leading-7 text-[#4CAF50] uppercase tracking-wider">Offline First</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl leading-tight">Scout without Signal</h2>
             <p className="mt-6 text-xl leading-8 text-[#AAAAAA]">
-              The best sites are often off the grid. SiteQuest is built to work offline.
+              The best sites are often off the grid. SiteQuest works fully offline—scout, save, and sync when you’re back online.
             </p>
           </div>
           <div className="mx-auto max-w-3xl">
@@ -127,21 +126,21 @@ export default function HomePage() {
                 <span className="mt-1 flex h-8 w-8 flex-none items-center justify-center rounded-full bg-[#4CAF50]/10 text-[#4CAF50] group-hover:bg-[#4CAF50]/20 transition-colors text-lg">✓</span>
                 <span className="leading-relaxed text-[#AAAAAA]">
                   <strong className="text-white block mb-1">Drive-Through Mode.</strong>
-                  A low-friction UI designed for rapid logging while you drive through a loop.
+                  Rapidly log multiple sites as you drive through a campground loop. Designed for speed and accuracy.
                 </span>
               </li>
               <li className="flex gap-x-4 items-start group bg-gradient-to-br from-[#1E1E1E] to-[#1A1A1A] p-6 rounded-xl border border-[#333] hover:border-[#4CAF50] transition-all duration-300">
                 <span className="mt-1 flex h-8 w-8 flex-none items-center justify-center rounded-full bg-[#4CAF50]/10 text-[#4CAF50] group-hover:bg-[#4CAF50]/20 transition-colors text-lg">✓</span>
                 <span className="leading-relaxed text-[#AAAAAA]">
-                  <strong className="text-white block mb-1">Local Drafts.</strong>
-                  Save your scouts locally and sync them to the cloud when you hit Wi-Fi.
+                  <strong className="text-white block mb-1">Offline Drafts & Sync.</strong>
+                  Save your scouts locally and sync them to the cloud when you’re back online.
                 </span>
               </li>
               <li className="flex gap-x-4 items-start group bg-gradient-to-br from-[#1E1E1E] to-[#1A1A1A] p-6 rounded-xl border border-[#333] hover:border-[#4CAF50] transition-all duration-300">
                 <span className="mt-1 flex h-8 w-8 flex-none items-center justify-center rounded-full bg-[#4CAF50]/10 text-[#4CAF50] group-hover:bg-[#4CAF50]/20 transition-colors text-lg">✓</span>
                 <span className="leading-relaxed text-[#AAAAAA]">
-                  <strong className="text-white block mb-1">Stealth & Wild.</strong>
-                  Log dispersed camping spots with GPS precision, kept private until you choose to share.
+                  <strong className="text-white block mb-1">Stealth & Wild Sites.</strong>
+                  Log dispersed or wild camping spots with GPS precision. Your wild sites stay private unless you choose to share.
                 </span>
               </li>
             </ul>

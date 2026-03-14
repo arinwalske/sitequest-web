@@ -37,11 +37,12 @@ const PrivacyPolicy = () => {
           <section className="mt-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">1. The &quot;Golden Rule&quot; of Your Location</h2>
             <p className="mb-4">
-              Your real-time location is <span className="text-[#4CAF50] font-semibold uppercase tracking-wide">never</span> uploaded, tracked, or sold. SiteQuest uses your device&apos;s GPS locally to show your position on the map and help you scout.
+              Your real-time location is <span className="text-[#4CAF50] font-semibold uppercase tracking-wide">never</span> uploaded, tracked, or sold. SiteQuest uses your device&apos;s GPS locally to show your position on the map and help you scout.<br />
+              <span className="font-semibold text-white">Precise Location</span> (collected via <span className="font-mono">ACCESS_FINE_LOCATION</span>) is only stored when you explicitly save a campsite.
             </p>
             <div className="bg-[#1E1E1E] p-6 rounded-xl border border-[#333] text-[#AAAAAA]">
               <strong className="text-[#4CAF50] block mb-2 text-lg">The only exception:</strong>
-              When you explicitly hit &quot;Save&quot; or &quot;Log Scout,&quot; the specific coordinates of that campsite are stored in the database so you can find them later.
+              When you explicitly hit &quot;Save&quot; or &quot;Log Scout,&quot; the specific coordinates of that campsite (your precise location) are stored in the database so you can find them later.
             </div>
           </section>
 
@@ -49,7 +50,7 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">2. Data Collection & Usage</h2>
             <ul className="list-disc list-inside marker:text-[#4CAF50] ml-2 space-y-2">
               <li>
-                <span className="font-semibold text-white">Account Info:</span> Email and a unique ID to sync your scouts across devices via Supabase.
+                <span className="font-semibold text-white">Email Address:</span> (Account Management, App Functionality) — Used to create your account, log in, and sync your scouts across devices via Supabase.
               </li>
               <li>
                 <span className="font-semibold text-white">User Content:</span> Campsite logs and notes you intentionally save.
@@ -74,7 +75,8 @@ const PrivacyPolicy = () => {
             </p>
             <div className="bg-[#1E1E1E] p-6 rounded-xl border border-[#333] text-[#AAAAAA]">
               <p>
-                Alternatively, you can request manual deletion or a copy of your data by emailing <a href="mailto:ARinwalske@gmail.com" className="text-[#4CAF50] hover:underline">ARinwalske@gmail.com</a>. Please use the email address associated with your account. All data will be wiped from our database within 48 hours of your request.
+                Alternatively, you can request manual deletion or a copy of your data by emailing <a href="mailto:ARinwalske@gmail.com" className="text-[#4CAF50] hover:underline">ARinwalske@gmail.com</a>. Please use the email address associated with your account. All data will be wiped from the database within 48 hours of your request.<br />
+                For web-based data deletion requests, you can also visit: <a href="https://sitequest.me/privacy" className="text-[#4CAF50] hover:underline">https://sitequest.me/privacy</a> (this page).
               </p>
             </div>
           </section>
